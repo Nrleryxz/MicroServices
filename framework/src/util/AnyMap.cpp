@@ -838,6 +838,12 @@ namespace cppmicroservices
         }
     }
 
+    bool
+    any_map::contains(any_map::key_type const& key) const
+    {
+        return count(key) > 0;
+    }
+
     void
     any_map::clear()
     {

@@ -268,6 +268,7 @@ namespace cppmicroservices
         bool empty() const;
         size_type size() const;
         size_type count(key_type const& key) const;
+        bool contains(key_type const& key) const;
         void clear();
 
         mapped_type& at(key_type const& key);
